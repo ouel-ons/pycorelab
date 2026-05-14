@@ -63,30 +63,23 @@ class DynamicArray(object):
 		return self._size
 
 	def __contains__(self, val):
-		if not val in self._array:
-			raise IndexError("sss")
+		if not val in self._array:			raise IndexError("sss")
 		return val in self._array
 
 	def __iter__(self):
 		pass
 
 	def __repr__(self):
-		pass
+		return f"{self._array}"
 
 	def __str__(self):
-		pass
+		return f"{self._array}"
+
 
 
 a = DynamicArray()
 
-print(len(a))
-a.append(888)
-a.append(22)
-print(a[0])
-print(a[1])
-
-print(len(a))
+print(a)
 
 
-
-print(22 in a)
+# print(22 in a)
